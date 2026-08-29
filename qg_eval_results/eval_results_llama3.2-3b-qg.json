@@ -1,0 +1,68 @@
+{
+  "results": {
+    "model_repo": "gaurav-dey/llama3.2-3b-qg",
+    "model_type": "causal",
+    "test_size": 1500,
+    "seed": 42,
+    "bleu": 10.831155530129566,
+    "rouge1": 0.3928531382048419,
+    "rouge2": 0.18004419701112745,
+    "rougeL": 0.3490483208670656,
+    "meteor": 0.4251910813894897,
+    "gpt2_perplexity": 84.2243437420296,
+    "distinct_1": 0.26128425015687096,
+    "distinct_2": 0.6351707208212453
+  },
+  "sample_predictions": [
+    {
+      "answer": "1852",
+      "gold_question": "In what year did Massachusetts first require children to be educated in schools?",
+      "generated_question": "In what year did compulsory education begin in Massachusetts?"
+    },
+    {
+      "answer": "1962",
+      "gold_question": "When were stromules discovered?",
+      "generated_question": "When were stromules first observed in plant cells?"
+    },
+    {
+      "answer": "Horace Walpole",
+      "gold_question": "Which artist who had a major influence on the Gothic Revival is represented in the V&A's British galleries?",
+      "generated_question": "Who was a major influence on the Gothic Revival?"
+    },
+    {
+      "answer": "several regional colleges and universities",
+      "gold_question": "In 1890, who did the university decide to team up with?",
+      "generated_question": "What types of institutions were affiliated with the University of Chicago in the 1890s?"
+    },
+    {
+      "answer": "Jonathan Stewart",
+      "gold_question": "Who got a touchdown making the score 10-7?",
+      "generated_question": "Who scored the 1-yard touchdown run that cut the score to 10\u20137 with 11:28 left in the second quarter?"
+    },
+    {
+      "answer": "30",
+      "gold_question": "How many Examination Boards exist in India?",
+      "generated_question": "How many different Examination Boards or academic authorities conduct examinations for school leaving certificates in India?"
+    },
+    {
+      "answer": "Caris & Co.",
+      "gold_question": "Who started rumors in 2008 that ABC would sell its ten owned-and-operated stations?",
+      "generated_question": "What company started rumors that Disney would sell the ten ABC-owned stations?"
+    },
+    {
+      "answer": "CBS",
+      "gold_question": "Which network broadcasted the 50th Super Bowl game?",
+      "generated_question": "What network broadcast Super Bowl 50 in the U.S.?"
+    },
+    {
+      "answer": "coordinate the response to the embargo",
+      "gold_question": "Why was this short termed organization created?",
+      "generated_question": "Who was appointed as the first Administrator of the Federal Energy Office in 1973 to coordinate the response to the embargo?"
+    },
+    {
+      "answer": "Last Glacial Maximum",
+      "gold_question": "What does LGM stands for?",
+      "generated_question": "What period in Earth's history is characterized by lower rainfall and reduced moist tropical vegetation cover in the Amazon basin?"
+    }
+  ]
+}

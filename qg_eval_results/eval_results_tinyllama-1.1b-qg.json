@@ -1,0 +1,68 @@
+{
+  "results": {
+    "model_repo": "gaurav-dey/tinyllama-1.1b-qg",
+    "model_type": "causal",
+    "test_size": 1500,
+    "seed": 42,
+    "bleu": 5.412595586697304,
+    "rouge1": 0.29537455199795737,
+    "rouge2": 0.11896952866008545,
+    "rougeL": 0.261842276628141,
+    "meteor": 0.32326395560060406,
+    "gpt2_perplexity": 73.43714270289739,
+    "distinct_1": 0.24834831931418996,
+    "distinct_2": 0.5961935724203326
+  },
+  "sample_predictions": [
+    {
+      "answer": "1852",
+      "gold_question": "In what year did Massachusetts first require children to be educated in schools?",
+      "generated_question": "According to the text, what is the Supreme Court precedent regarding educational choice in the United States?"
+    },
+    {
+      "answer": "1962",
+      "gold_question": "When were stromules discovered?",
+      "generated_question": "What is the correct answer to the question about stromules in chloroplasts? \n\nThe correct answer to the question about stromules in chloroplasts is that they are rare in chloroplasts, and are much more common in other plastids like chromoplasts and amyloplasts in petals and roots, respectively."
+    },
+    {
+      "answer": "Horace Walpole",
+      "gold_question": "Which artist who had a major influence on the Gothic Revival is represented in the V&A's British galleries?",
+      "generated_question": "According to the text, who was a major influence on the Gothic Revival?"
+    },
+    {
+      "answer": "several regional colleges and universities",
+      "gold_question": "In 1890, who did the university decide to team up with?",
+      "generated_question": "Which regional colleges and universities were affiliated with the University of Chicago in the 1890s?"
+    },
+    {
+      "answer": "Jonathan Stewart",
+      "gold_question": "Who got a touchdown making the score 10-7?",
+      "generated_question": "What was the score at the end of Carolina's 9-play, 73-yard scoring drive?"
+    },
+    {
+      "answer": "30",
+      "gold_question": "How many Examination Boards exist in India?",
+      "generated_question": "Which of the Examination Boards or academic authorities conducts examinations for school leaving certificates in India?"
+    },
+    {
+      "answer": "Caris & Co.",
+      "gold_question": "Who started rumors in 2008 that ABC would sell its ten owned-and-operated stations?",
+      "generated_question": "How did the Writers Guild of America strike affect ABC during the 2007-2008 and 2008-2009 seasons?"
+    },
+    {
+      "answer": "CBS",
+      "gold_question": "Which network broadcasted the 50th Super Bowl game?",
+      "generated_question": "How much did CBS charge for a 30-second commercial during Super Bowl 50?"
+    },
+    {
+      "answer": "coordinate the response to the embargo",
+      "gold_question": "Why was this short termed organization created?",
+      "generated_question": "In 1973, Nixon named William E. Simon as the first Administrator of the Federal Energy Office, a short-term organization created to coordinate the response to the embargo. Simon allocated states the same amount of domestic oil for 1974 that each had consumed in 1972, which worked for states whose populations were not increasing. The American Automobile Association reported that in the last week of February 1974,"
+    },
+    {
+      "answer": "Last Glacial Maximum",
+      "gold_question": "What does LGM stands for?",
+      "generated_question": "What was the evidence for significant changes in Amazon rainforest vegetation over the last 21,000 years through the Last Glacial Maximum (LGM) and subsequent deglaciation?"
+    }
+  ]
+}

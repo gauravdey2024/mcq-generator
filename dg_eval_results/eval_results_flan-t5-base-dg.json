@@ -1,0 +1,70 @@
+{
+  "results": {
+    "model_repo": "gaurav-dey/flan-t5-base-dg",
+    "model_type": "seq2seq",
+    "test_size": 1500,
+    "seed": 42,
+    "bleu": 6.005088593088841,
+    "rouge1": 0.21976621301474536,
+    "rouge2": 0.0704156735899987,
+    "rougeL": 0.21222240985035706,
+    "meteor": 0.19668012074620864,
+    "gpt2_perplexity": 2256.6650534893042,
+    "distinct_1": 0.29994869163673676,
+    "distinct_2": 0.6852637962401456,
+    "mean_answer_similarity": 0.4926227331161499,
+    "pct_high_risk_similarity": 8.266666666666666
+  },
+  "sample_predictions": [
+    {
+      "correct_answer": "Working or talking with students.",
+      "gold_distractor": "Having a basketball game.",
+      "generated_distractor": "Reading and doing homework."
+    },
+    {
+      "correct_answer": "we must know who we are",
+      "gold_distractor": "we should know what we do",
+      "generated_distractor": "we are always valuable to those who love us"
+    },
+    {
+      "correct_answer": "the high quality education and research and the wide range of courses",
+      "gold_distractor": "the convenient traffic",
+      "generated_distractor": "the rich and varied cultural life"
+    },
+    {
+      "correct_answer": "they watch TV late",
+      "gold_distractor": "they play the computer games late into the night",
+      "generated_distractor": "they have too much homework"
+    },
+    {
+      "correct_answer": "it's hard to decide whether it's a car or a plane",
+      "gold_distractor": "there are still some technical problems to be solved",
+      "generated_distractor": "it's too expensive to make a flying car"
+    },
+    {
+      "correct_answer": "David",
+      "gold_distractor": "Bruce",
+      "generated_distractor": "Bruce"
+    },
+    {
+      "correct_answer": "The rock becomes unclear.",
+      "gold_distractor": "The water does not move anymore.",
+      "generated_distractor": "The rock becomes bright."
+    },
+    {
+      "correct_answer": "Because she can't join the class volleyball team.",
+      "gold_distractor": "Because her PE teacher likes her very much.",
+      "generated_distractor": "Because her PE teacher doesn't like fat girls."
+    },
+    {
+      "correct_answer": "facial features might give people some wrong impressions",
+      "gold_distractor": "people with good facial features must be trustworthy",
+      "generated_distractor": "people don't make quick judgments about a book by its cover"
+    },
+    {
+      "correct_answer": "always eat simple food",
+      "gold_distractor": "eat nothing but apples",
+      "generated_distractor": "often eat more food"
+    }
+  ]
+}

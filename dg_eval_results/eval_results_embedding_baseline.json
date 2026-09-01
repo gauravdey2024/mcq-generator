@@ -1,0 +1,69 @@
+{
+  "results": {
+    "method": "embedding_baseline",
+    "test_size": 1500,
+    "seed": 42,
+    "bleu": 0.7559427564547295,
+    "rouge1": 0.09698193250006322,
+    "rouge2": 0.015171214974109712,
+    "rougeL": 0.0936229584636668,
+    "meteor": 0.07960380326257642,
+    "gpt2_perplexity": 4179.858927127872,
+    "distinct_1": 0.3082313965341488,
+    "distinct_2": 0.7076244486452425,
+    "mean_answer_similarity": 0.6502580642700195,
+    "pct_high_risk_similarity": 4.6
+  },
+  "sample_predictions": [
+    {
+      "correct_answer": "Working or talking with students.",
+      "gold_distractor": "Having a basketball game.",
+      "generated_distractor": "helps students stay in contact with others"
+    },
+    {
+      "correct_answer": "we must know who we are",
+      "gold_distractor": "we should know what we do",
+      "generated_distractor": "everyone has to figure out who we are and why we are here"
+    },
+    {
+      "correct_answer": "the high quality education and research and the wide range of courses",
+      "gold_distractor": "the convenient traffic",
+      "generated_distractor": "is built on important courses and the results of recent studies"
+    },
+    {
+      "correct_answer": "they watch TV late",
+      "gold_distractor": "they play the computer games late into the night",
+      "generated_distractor": "they watch TV too often"
+    },
+    {
+      "correct_answer": "it's hard to decide whether it's a car or a plane",
+      "gold_distractor": "there are still some technical problems to be solved",
+      "generated_distractor": "an airline"
+    },
+    {
+      "correct_answer": "David",
+      "gold_distractor": "Bruce",
+      "generated_distractor": "was ready to listen to David"
+    },
+    {
+      "correct_answer": "The rock becomes unclear.",
+      "gold_distractor": "The water does not move anymore.",
+      "generated_distractor": "Color of the rock"
+    },
+    {
+      "correct_answer": "Because she can't join the class volleyball team.",
+      "gold_distractor": "Because her PE teacher likes her very much.",
+      "generated_distractor": "because she was eager to get an advantage over others in the competition"
+    },
+    {
+      "correct_answer": "facial features might give people some wrong impressions",
+      "gold_distractor": "people with good facial features must be trustworthy",
+      "generated_distractor": "People rush to judgments based on facial features."
+    },
+    {
+      "correct_answer": "always eat simple food",
+      "gold_distractor": "eat nothing but apples",
+      "generated_distractor": "eat properly"
+    }
+  ]
+}

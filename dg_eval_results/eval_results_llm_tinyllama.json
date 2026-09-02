@@ -1,0 +1,136 @@
+{
+  "results": {
+    "method": "tinyllama_llm",
+    "model_name": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "test_size": 1500,
+    "seed": 42,
+    "llm_eval_size": 300,
+    "per_strategy": {
+      "zero_shot": {
+        "strategy": "zero_shot",
+        "n_items": 300,
+        "bleu": 1.351776618800401,
+        "rouge1": 0.11165012958603726,
+        "rouge2": 0.03724183189344595,
+        "rougeL": 0.1019176158869349,
+        "meteor": 0.1451976758824723,
+        "gpt2_perplexity": 121.14282358169555,
+        "distinct_1": 0.3220110728714649,
+        "distinct_2": 0.7103242989190036,
+        "mean_answer_similarity": 0.4297023117542267,
+        "pct_high_risk_similarity": 0.6666666666666667
+      },
+      "few_shot": {
+        "strategy": "few_shot",
+        "n_items": 300,
+        "bleu": 0.9903077938341595,
+        "rouge1": 0.07228097539389518,
+        "rouge2": 0.01669780609055405,
+        "rougeL": 0.06564521693889269,
+        "meteor": 0.08698127888726077,
+        "gpt2_perplexity": 660.6364426268744,
+        "distinct_1": 0.35738581146744414,
+        "distinct_2": 0.7057127882599581,
+        "mean_answer_similarity": 0.28426605463027954,
+        "pct_high_risk_similarity": 1.0
+      },
+      "misconception_cot": {
+        "strategy": "misconception_cot",
+        "n_items": 300,
+        "bleu": 0.8781809009588182,
+        "rouge1": 0.11161944433169929,
+        "rouge2": 0.028279723254610874,
+        "rougeL": 0.10127132540320051,
+        "meteor": 0.14849426976986752,
+        "gpt2_perplexity": 118.24347077051799,
+        "distinct_1": 0.23624808240192854,
+        "distinct_2": 0.5356900067980965,
+        "mean_answer_similarity": 0.5198305249214172,
+        "pct_high_risk_similarity": 4.666666666666667
+      }
+    }
+  },
+  "sample_predictions": {
+    "zero_shot": [
+      {
+        "correct_answer": "Working or talking with students.",
+        "gold_distractor": "Having a basketball game.",
+        "generated_distractor": "Option 2: \"Some students are in the classroom, reading and doing homework.\""
+      },
+      {
+        "correct_answer": "we must know who we are",
+        "gold_distractor": "we should know what we do",
+        "generated_distractor": "Option 2: \"We must know who we are, not what we do or whom we know, but who we are.\" This answer option is incorrect because it does not relate to the topic of the question. It is a distractor"
+      },
+      {
+        "correct_answer": "the high quality education and research and the wide range of courses",
+        "gold_distractor": "the convenient traffic",
+        "generated_distractor": "Option B: Coteborg University is known for its exceptional student life, which includes a rich and varied cultural life, outdoor activities, and a diverse range of theatres, concerts, and festivals."
+      },
+      {
+        "correct_answer": "they watch TV late",
+        "gold_distractor": "they play the computer games late into the night",
+        "generated_distractor": "Option B: \"study late\""
+      },
+      {
+        "correct_answer": "it's hard to decide whether it's a car or a plane",
+        "gold_distractor": "there are still some technical problems to be solved",
+        "generated_distractor": "Option B: The flying car is forbidden to take off because it's illegal to leave the ground."
+      }
+    ],
+    "few_shot": [
+      {
+        "correct_answer": "Working or talking with students.",
+        "gold_distractor": "Having a basketball game.",
+        "generated_distractor": "A student who is not a teacher but is interested in the topic of the multiple-choice exam question."
+      },
+      {
+        "correct_answer": "we must know who we are",
+        "gold_distractor": "we should know what we do",
+        "generated_distractor": "\"The lesson tells us a truth, that is  _  .\""
+      },
+      {
+        "correct_answer": "the high quality education and research and the wide range of courses",
+        "gold_distractor": "the convenient traffic",
+        "generated_distractor": "Coteborg University"
+      },
+      {
+        "correct_answer": "they watch TV late",
+        "gold_distractor": "they play the computer games late into the night",
+        "generated_distractor": "Coca-Cola"
+      },
+      {
+        "correct_answer": "it's hard to decide whether it's a car or a plane",
+        "gold_distractor": "there are still some technical problems to be solved",
+        "generated_distractor": ">"
+      }
+    ],
+    "misconception_cot": [
+      {
+        "correct_answer": "Working or talking with students.",
+        "gold_distractor": "Having a basketball game.",
+        "generated_distractor": "Question: What are the teachers doing?\n\nCorrect Answer: Working or talking with students\n\nThink step by step:\n1. Identify ONE common misconception or plausible-but-wrong idea a student might have that relates to this question.\n2. Phrase that misconception as a single, concise distractor option (similar length and style to the correct answer).\n\nRespond in EXACTLY"
+      },
+      {
+        "correct_answer": "we must know who we are",
+        "gold_distractor": "we should know what we do",
+        "generated_distractor": "Question: The lesson tells us a truth, that is  _  .\nCorrect Answer: we must know who we are\n\nThink step by step:\n1. Identify ONE common misconception or plausible-but-wrong idea a student might have that relates to this question.\n2. Phrase that misconception as a single, concise distractor option (similar length and style to the correct answer)."
+      },
+      {
+        "correct_answer": "the high quality education and research and the wide range of courses",
+        "gold_distractor": "the convenient traffic",
+        "generated_distractor": "Correct Answer: The main reasons for Coteborg University's popularity according to the passage are the high quality education and research and the wide range of courses."
+      },
+      {
+        "correct_answer": "they watch TV late",
+        "gold_distractor": "they play the computer games late into the night",
+        "generated_distractor": "Question: Many students have fallen asleep in class because they watch TV late.\nCorrect Answer: They watch TV late"
+      },
+      {
+        "correct_answer": "it's hard to decide whether it's a car or a plane",
+        "gold_distractor": "there are still some technical problems to be solved",
+        "generated_distractor": "Question: The flying car is presently forbidden to take off because  _  .\nCorrect Answer: it's hard to decide whether it's a car or a plane"
+      }
+    ]
+  }
+}

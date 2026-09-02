@@ -1,0 +1,136 @@
+{
+  "results": {
+    "method": "qwen_llm",
+    "model_name": "Qwen/Qwen2.5-1.5B-Instruct",
+    "test_size": 1500,
+    "seed": 42,
+    "llm_eval_size": 300,
+    "per_strategy": {
+      "zero_shot": {
+        "strategy": "zero_shot",
+        "n_items": 300,
+        "bleu": 3.1840540489979072,
+        "rouge1": 0.15437144057950694,
+        "rouge2": 0.04931948678256727,
+        "rougeL": 0.1518465203991553,
+        "meteor": 0.14008988323198024,
+        "gpt2_perplexity": 1682.8010646293903,
+        "distinct_1": 0.5318441064638784,
+        "distinct_2": 0.9018847006651884,
+        "mean_answer_similarity": 0.4458402097225189,
+        "pct_high_risk_similarity": 1.3333333333333335
+      },
+      "few_shot": {
+        "strategy": "few_shot",
+        "n_items": 300,
+        "bleu": 3.5134436845480623,
+        "rouge1": 0.17629269455412133,
+        "rouge2": 0.04793358312380051,
+        "rougeL": 0.17376904784773628,
+        "meteor": 0.1393824539981066,
+        "gpt2_perplexity": 5867.843601874903,
+        "distinct_1": 0.5292447473026689,
+        "distinct_2": 0.8973305954825462,
+        "mean_answer_similarity": 0.5296502113342285,
+        "pct_high_risk_similarity": 8.666666666666668
+      },
+      "misconception_cot": {
+        "strategy": "misconception_cot",
+        "n_items": 300,
+        "bleu": 1.642221499149014,
+        "rouge1": 0.13629395295046914,
+        "rouge2": 0.032059360026791474,
+        "rougeL": 0.1231561051688537,
+        "meteor": 0.152541012266046,
+        "gpt2_perplexity": 218.02202990849813,
+        "distinct_1": 0.4653636102328255,
+        "distinct_2": 0.8782636049072036,
+        "mean_answer_similarity": 0.5302558541297913,
+        "pct_high_risk_similarity": 15.333333333333332
+      }
+    }
+  },
+  "sample_predictions": {
+    "zero_shot": [
+      {
+        "correct_answer": "Working or talking with students.",
+        "gold_distractor": "Having a basketball game.",
+        "generated_distractor": "Watching TV in their offices"
+      },
+      {
+        "correct_answer": "we must know who we are",
+        "gold_distractor": "we should know what we do",
+        "generated_distractor": "We must learn how to handle money properly"
+      },
+      {
+        "correct_answer": "the high quality education and research and the wide range of courses",
+        "gold_distractor": "the convenient traffic",
+        "generated_distractor": "The low tuition fees compared to other universities"
+      },
+      {
+        "correct_answer": "they watch TV late",
+        "gold_distractor": "they play the computer games late into the night",
+        "generated_distractor": "Many students have fallen asleep in class because they eat too much candy before school."
+      },
+      {
+        "correct_answer": "it's hard to decide whether it's a car or a plane",
+        "gold_distractor": "there are still some technical problems to be solved",
+        "generated_distractor": "It's too dangerous to allow flying cars on the road"
+      }
+    ],
+    "few_shot": [
+      {
+        "correct_answer": "Working or talking with students.",
+        "gold_distractor": "Having a basketball game.",
+        "generated_distractor": "Watching TV"
+      },
+      {
+        "correct_answer": "we must know who we are",
+        "gold_distractor": "we should know what we do",
+        "generated_distractor": "We must learn how to drop things"
+      },
+      {
+        "correct_answer": "the high quality education and research and the wide range of courses",
+        "gold_distractor": "the convenient traffic",
+        "generated_distractor": "The beautiful campus and picturesque surroundings"
+      },
+      {
+        "correct_answer": "they watch TV late",
+        "gold_distractor": "they play the computer games late into the night",
+        "generated_distractor": "they don't like school"
+      },
+      {
+        "correct_answer": "it's hard to decide whether it's a car or a plane",
+        "gold_distractor": "there are still some technical problems to be solved",
+        "generated_distractor": "It violates traffic laws"
+      }
+    ],
+    "misconception_cot": [
+      {
+        "correct_answer": "Working or talking with students.",
+        "gold_distractor": "Having a basketball game.",
+        "generated_distractor": "The teachers are sleeping in their offices."
+      },
+      {
+        "correct_answer": "we must know who we are",
+        "gold_distractor": "we should know what we do",
+        "generated_distractor": "The lesson tells us that losing something bad makes us more valuable."
+      },
+      {
+        "correct_answer": "the high quality education and research and the wide range of courses",
+        "gold_distractor": "the convenient traffic",
+        "generated_distractor": "The high quality education and research and the wide range of courses are not the main reasons for Coteborg University's popularity."
+      },
+      {
+        "correct_answer": "they watch TV late",
+        "gold_distractor": "they play the computer games late into the night",
+        "generated_distractor": "Many students have fallen asleep in class because they watch TV late."
+      },
+      {
+        "correct_answer": "it's hard to decide whether it's a car or a plane",
+        "gold_distractor": "there are still some technical problems to be solved",
+        "generated_distractor": "Flying cars are forbidden because their wheels are too heavy to lift off the ground."
+      }
+    ]
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "results": {
+    "method": "phi35_llm",
+    "model_name": "microsoft/Phi-3.5-mini-instruct",
+    "test_size": 1500,
+    "seed": 42,
+    "llm_eval_size": 300,
+    "per_strategy": {
+      "zero_shot": {
+        "strategy": "zero_shot",
+        "n_items": 300,
+        "bleu": 1.6098764885971406,
+        "rouge1": 0.15334816608636764,
+        "rouge2": 0.041800296795181706,
+        "rougeL": 0.14867180996951818,
+        "meteor": 0.14341628297743217,
+        "gpt2_perplexity": 683.1792983428852,
+        "distinct_1": 0.5380749903362969,
+        "distinct_2": 0.9020550940096196,
+        "mean_answer_similarity": 0.4316404163837433,
+        "pct_high_risk_similarity": 0.33333333333333337
+      },
+      "few_shot": {
+        "strategy": "few_shot",
+        "n_items": 300,
+        "bleu": 1.6707767612690558,
+        "rouge1": 0.16007741813426826,
+        "rouge2": 0.0393671907632176,
+        "rougeL": 0.15421710061525795,
+        "meteor": 0.14189376497914638,
+        "gpt2_perplexity": 686.968540555722,
+        "distinct_1": 0.5201015658061786,
+        "distinct_2": 0.8502181289384392,
+        "mean_answer_similarity": 0.43144938349723816,
+        "pct_high_risk_similarity": 1.3333333333333335
+      },
+      "misconception_cot": {
+        "strategy": "misconception_cot",
+        "n_items": 300,
+        "bleu": 1.409723174532157,
+        "rouge1": 0.14786344707470947,
+        "rouge2": 0.03272240560192548,
+        "rougeL": 0.13797988261969835,
+        "meteor": 0.143730375978084,
+        "gpt2_perplexity": 3628.5936571746147,
+        "distinct_1": 0.528712198436969,
+        "distinct_2": 0.8951948543321983,
+        "mean_answer_similarity": 0.49765971302986145,
+        "pct_high_risk_similarity": 10.0
+      }
+    }
+  },
+  "sample_predictions": {
+    "zero_shot": [
+      {
+        "correct_answer": "Working or talking with students.",
+        "gold_distractor": "Having a basketball game.",
+        "generated_distractor": "Working in the library"
+      },
+      {
+        "correct_answer": "we must know who we are",
+        "gold_distractor": "we should know what we do",
+        "generated_distractor": "Our value comes from our achievements and social status."
+      },
+      {
+        "correct_answer": "the high quality education and research and the wide range of courses",
+        "gold_distractor": "the convenient traffic",
+        "generated_distractor": "The presence of numerous sports facilities and athletic programs"
+      },
+      {
+        "correct_answer": "they watch TV late",
+        "gold_distractor": "they play the computer games late into the night",
+        "generated_distractor": "They stay up late to finish homework assignments."
+      },
+      {
+        "correct_answer": "it's hard to decide whether it's a car or a plane",
+        "gold_distractor": "there are still some technical problems to be solved",
+        "generated_distractor": "The wings are illegal to leave the ground due to safety regulations."
+      }
+    ],
+    "few_shot": [
+      {
+        "correct_answer": "Working or talking with students.",
+        "gold_distractor": "Having a basketball game.",
+        "generated_distractor": "Teaching a foreign language class."
+      },
+      {
+        "correct_answer": "we must know who we are",
+        "gold_distractor": "we should know what we do",
+        "generated_distractor": "Our value is determined by our wealth."
+      },
+      {
+        "correct_answer": "the high quality education and research and the wide range of courses",
+        "gold_distractor": "the convenient traffic",
+        "generated_distractor": "The university's proximity to international airports"
+      },
+      {
+        "correct_answer": "they watch TV late",
+        "gold_distractor": "they play the computer games late into the night",
+        "generated_distractor": "They are too excited about their upcoming exams."
+      },
+      {
+        "correct_answer": "it's hard to decide whether it's a car or a plane",
+        "gold_distractor": "there are still some technical problems to be solved",
+        "generated_distractor": "It's not yet powerful enough to take off."
+      }
+    ],
+    "misconception_cot": [
+      {
+        "correct_answer": "Working or talking with students.",
+        "gold_distractor": "Having a basketball game.",
+        "generated_distractor": "Playing basketball with students."
+      },
+      {
+        "correct_answer": "we must know who we are",
+        "gold_distractor": "we should know what we do",
+        "generated_distractor": "The lesson tells us that our worth is tied to our wealth and social connections."
+      },
+      {
+        "correct_answer": "the high quality education and research and the wide range of courses",
+        "gold_distractor": "the convenient traffic",
+        "generated_distractor": "The city center location of Coteborg University."
+      },
+      {
+        "correct_answer": "they watch TV late",
+        "gold_distractor": "they play the computer games late into the night",
+        "generated_distractor": "Students fall asleep in class due to excessive daytime napping."
+      },
+      {
+        "correct_answer": "it's hard to decide whether it's a car or a plane",
+        "gold_distractor": "there are still some technical problems to be solved",
+        "generated_distractor": "It's currently illegal for the flying car to take off because of technical malfunctions or design flaws."
+      }
+    ]
+  }
+}

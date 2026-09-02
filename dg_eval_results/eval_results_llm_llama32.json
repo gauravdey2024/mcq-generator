@@ -1,0 +1,136 @@
+{
+  "results": {
+    "method": "llama32_llm",
+    "model_name": "meta-llama/Llama-3.2-3B-Instruct",
+    "test_size": 1500,
+    "seed": 42,
+    "llm_eval_size": 300,
+    "per_strategy": {
+      "zero_shot": {
+        "strategy": "zero_shot",
+        "n_items": 300,
+        "bleu": 1.4551740976830652,
+        "rouge1": 0.13905284837043794,
+        "rouge2": 0.033234983495447346,
+        "rougeL": 0.12311176902329202,
+        "meteor": 0.1657970542549976,
+        "gpt2_perplexity": 119.20310444037119,
+        "distinct_1": 0.39014457340663816,
+        "distinct_2": 0.8041639557579701,
+        "mean_answer_similarity": 0.42527827620506287,
+        "pct_high_risk_similarity": 2.0
+      },
+      "few_shot": {
+        "strategy": "few_shot",
+        "n_items": 300,
+        "bleu": 2.9446843708426083,
+        "rouge1": 0.1717753024038296,
+        "rouge2": 0.04424358155031527,
+        "rougeL": 0.16388224284354963,
+        "meteor": 0.1547100708535443,
+        "gpt2_perplexity": 2895.23370160328,
+        "distinct_1": 0.4699281867145422,
+        "distinct_2": 0.8480290456431535,
+        "mean_answer_similarity": 0.48330333828926086,
+        "pct_high_risk_similarity": 4.0
+      },
+      "misconception_cot": {
+        "strategy": "misconception_cot",
+        "n_items": 300,
+        "bleu": 1.1577704148096633,
+        "rouge1": 0.134096355015332,
+        "rouge2": 0.02893844044735265,
+        "rougeL": 0.12186779958655794,
+        "meteor": 0.15218030771194796,
+        "gpt2_perplexity": 274.1384473101298,
+        "distinct_1": 0.40054027504911593,
+        "distinct_2": 0.8120360551431601,
+        "mean_answer_similarity": 0.4258900284767151,
+        "pct_high_risk_similarity": 2.666666666666667
+      }
+    }
+  },
+  "sample_predictions": {
+    "zero_shot": [
+      {
+        "correct_answer": "Working or talking with students.",
+        "gold_distractor": "Having a basketball game.",
+        "generated_distractor": "Taking a nap in the staff room."
+      },
+      {
+        "correct_answer": "we must know who we are",
+        "gold_distractor": "we should know what we do",
+        "generated_distractor": "We must always be willing to take risks to achieve our goals."
+      },
+      {
+        "correct_answer": "the high quality education and research and the wide range of courses",
+        "gold_distractor": "the convenient traffic",
+        "generated_distractor": "The main reasons for Coteborg University's popularity according to the passage is the high standard of student accommodation."
+      },
+      {
+        "correct_answer": "they watch TV late",
+        "gold_distractor": "they play the computer games late into the night",
+        "generated_distractor": "Too much homework is the main reason why students fall asleep in class."
+      },
+      {
+        "correct_answer": "it's hard to decide whether it's a car or a plane",
+        "gold_distractor": "there are still some technical problems to be solved",
+        "generated_distractor": "The flying car is presently forbidden to take off because it's too heavy."
+      }
+    ],
+    "few_shot": [
+      {
+        "correct_answer": "Working or talking with students.",
+        "gold_distractor": "Having a basketball game.",
+        "generated_distractor": "Taking a long lunch break."
+      },
+      {
+        "correct_answer": "we must know who we are",
+        "gold_distractor": "we should know what we do",
+        "generated_distractor": "we must always be loved by others"
+      },
+      {
+        "correct_answer": "the high quality education and research and the wide range of courses",
+        "gold_distractor": "the convenient traffic",
+        "generated_distractor": "the high cost of living in Coteborg"
+      },
+      {
+        "correct_answer": "they watch TV late",
+        "gold_distractor": "they play the computer games late into the night",
+        "generated_distractor": "they do too much homework."
+      },
+      {
+        "correct_answer": "it's hard to decide whether it's a car or a plane",
+        "gold_distractor": "there are still some technical problems to be solved",
+        "generated_distractor": "because it is too heavy."
+      }
+    ],
+    "misconception_cot": [
+      {
+        "correct_answer": "Working or talking with students.",
+        "gold_distractor": "Having a basketball game.",
+        "generated_distractor": "The teachers are all sitting idle and doing nothing."
+      },
+      {
+        "correct_answer": "we must know who we are",
+        "gold_distractor": "we should know what we do",
+        "generated_distractor": "The lesson tells us that we must know who we are in order to be valuable to others."
+      },
+      {
+        "correct_answer": "the high quality education and research and the wide range of courses",
+        "gold_distractor": "the convenient traffic",
+        "generated_distractor": "The beautiful city centre and surrounding natural areas are the main reasons for Coteborg University's popularity."
+      },
+      {
+        "correct_answer": "they watch TV late",
+        "gold_distractor": "they play the computer games late into the night",
+        "generated_distractor": "Many students stay up late because of too much homework."
+      },
+      {
+        "correct_answer": "it's hard to decide whether it's a car or a plane",
+        "gold_distractor": "there are still some technical problems to be solved",
+        "generated_distractor": "The flying car is forbidden to take off because it's too expensive."
+      }
+    ]
+  }
+}
